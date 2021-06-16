@@ -11,6 +11,6 @@ namespace EplayersMVC.Interfaces
 
          void Alterar(Equipe e);
 
-         void Deleter(int Id);
+         void Deletar(int Id);
     }
 }

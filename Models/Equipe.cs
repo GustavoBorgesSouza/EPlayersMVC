@@ -34,7 +34,7 @@ namespace EplayersMVC.Models
             File.AppendAllLines(CAMINHO, linha);
         }
 
-        public void Deleter(int Id)
+        public void Deletar(int Id)
         {
             List<string> linhas = LerTodasLinhasCSV(CAMINHO);
             linhas.RemoveAll(x => x.Split(";")[0] == Id.ToString());
