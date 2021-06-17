@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC\\EplayersMVC.csproj": {}
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC - Copia\\EplayersMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC\\EplayersMVC.csproj": {
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC - Copia\\EplayersMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC\\EplayersMVC.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC - Copia\\EplayersMVC.csproj",
         "projectName": "EplayersMVC",
-        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC\\EplayersMVC.csproj",
+        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC - Copia\\EplayersMVC.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC\\obj\\",
+        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\EPlayersMVC - Copia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config"
