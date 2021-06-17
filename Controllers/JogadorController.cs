@@ -9,11 +9,13 @@ namespace EPlayersMVC.Controllers
     public class JogadorController : Controller
     {
         Jogador jogadorModel = new Jogador();
+        Equipe equipeModel = new Equipe();
         
         [Route("Listar")]
         public IActionResult Index(){
-
+            
             ViewBag.Jogadores = jogadorModel.LerTodos();
+            ViewBag.Equipes = equipeModel.LerTodas();
             return View();
         }
 
@@ -23,6 +25,8 @@ namespace EPlayersMVC.Controllers
             novoJogador.IdJogador = Int32.Parse(form["IdJogador"]);
             novoJogador.IdEquipe = Int32.Parse(form["IdEquipe"]);
             novoJogador.Nome = form["Nome"];
+            novoJogador.Email = form["Email"];
+            novoJogador.Senha = form["Senha"];
 
             jogadorModel.Criar(novoJogador);
 

@@ -7,11 +7,24 @@
     <label>ID do Jogador</label>
     <input type="text" name="IdJogador">
 
-    <label>ID da Equipe</label>
-    <input type="text" name="IdEquipe">
+    @* <input type="text" name="IdEquipe"> *@
+    <label>Equipe</label>
+    <select id="IdEquipe" name="IdEquipe">
+        <option value="0" selected disabled>Selecione</option>
+        @foreach (Equipe equipe in ViewBag.Equipes)
+        {
+            <option value="@equipe.IdEquipe">@equipe.Nome</option>
+        }
+    </select>
 
     <label>Nome Jogador</label>
     <input type="text" name="Nome">
+
+    <label>Email</label>
+    <input type="email" name="Email">
+
+    <label>Senha</label>
+    <input type="password" name="Senha">
 
     <button type="submit">Cadastrar</button>
 </form>
