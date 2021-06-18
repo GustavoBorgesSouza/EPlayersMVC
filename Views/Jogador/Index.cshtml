@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Jogadores";
 }
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 <form method="POST" action='@Url.Action("Cadastrar")'>
     <label>ID do Jogador</label>
@@ -42,6 +43,7 @@
                 <td>@jogador.IdJogador</td>
                 <td>@jogador.IdEquipe</td>
                 <td>@jogador.Nome</td>
+                <td> <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador" > <i class="far fa-trash-alt"></i> </a> </td>
             </tr>
         }
     </tbody>
