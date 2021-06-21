@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de times</title>
+    <script src="https://kit.fontawesome.com/ab7fe2068a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cadastroj.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container container_header">
+            <a href="#container_banner"><img src="assets_/logo.svg" alt="logo"></a>
+            <nav id="links" class="menu_header">
+                <a href="#container_banner"  onclick="botaoDoMenu()">Início</a>
+                <a href="#horarios"  onclick="botaoDoMenu()">Horários</a>
+                <a href="#"  onclick="botaoDoMenu()">Campeonato</a>
+                <a href="#"  onclick="botaoDoMenu()">Resultados</a>
+                <a href="#container_noticias"  onclick="botaoDoMenu()">Notícias</a>
+            </nav>
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container_banner">
+            <h1>Cadastro de jogadores</h1>
+        </section>
+
+        <section class="content content_container">
+            <div class="cadastro_container">
+                <div class="preencher">
+                <span>Nome do jogador</span>
+                <input type="text" name="nome do jogador" id="nome">
+                </div>
+                <div class="preencher">
+                <span>E-mail</span>
+                <input type="email" name="email" id="nome">
+                </div>
+                <div class="preencher">
+                <span>Senha</span>
+                <input type="password" name="password" id="nome">
+                </div>
+                <div class="preencher_equipe">
+                <span>Equipe</span>
+                <input type="text" name="equipe" id="nome">
+                </div>
+                <button>Cadastrar</button>
+            </div>
+
+            <h2>Lista de times</h2>
+
+            <table>
+                <tr class="cabecalho">
+                    <th>Nome do jogador</th>
+                    <th>Equipe</th>
+                </tr>
+                <tr>
+                    <td>Thiago</td>
+                    <td>SENAI Cythechs</td>
+                </tr>
+                <tr>
+                    <td>Odirlei</td>
+                    <td>SENAI Cythechs</td>
+                </tr>
+            </table>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container container_footer">
+            <nav class="links">
+                <h3>Links úteis</h3>
+                <a href="#">-Regras de utilização</a>
+                <a href="#">-Suporte</a>
+                <a href="#">-Central de ajuda</a>
+                <a href="#">-Contato</a>
+            </nav>
+
+            <nav class="paginas">
+                <h3>Páginas</h3>
+                <a href="#container_header">-Início</a>
+                <a href="#">-Campeonatos</a>
+                <a href="#">-Resultados</a>
+                <a href="#container_noticias">-Notícias</a>
+                <a href="#">-Login/cadastro</a>
+            </nav>
+
+            <a class="logo" href="#container_header"><img src="assets_/logo.svg" alt="logo E-players"></a>
+
+            <div class="contato">
+                <p>Faça parte do nosso clan, assine nossa nesletter!</p>
+                <form action="post">
+                    <input type="email" id="email" name="email">
+                    <input type="submit" class="botao">
+                </form>
+                <div class="seguir">
+                    <span>Siga-nos em:</span>
+                    <a href="https://www.instagram.com/senai_info/"><img src="assets_/instagram.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/senaiinformatica"><img src="assets_/facebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img src="assets_/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function botaoDoMenu() {
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none"
+                // esconder menu
+            } else{
+                menu.style.display = "flex"
+                // mostre menu
+            }
+        }
+    </script>
+</body>
+</html>

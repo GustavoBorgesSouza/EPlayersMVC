@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.container{
+    /* background-color: blue; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1E1C21;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.menu_header{
+    width: 724px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_header a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container_banner{
+    margin-top: 90px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+
+    background: linear-gradient(90deg, #9D2FAF 0%, #811D92 13.02%, #691277 38.54%, #110E12 55.73%, #000000 100%);
+}
+
+.container_banner img{
+    height: 482px;
+    width: auto;
+}
+
+.content_banner{
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.container_banner h1{
+    font-weight: bolder;
+    font-size: 64px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container_banner p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.container_banner a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #9A2DAC ;
+    text-align: center;
+    width: 290px;
+    height: 52px;
+    border-radius: 14px;
+    margin-top: 120px;
+}
+
+.parcerias{
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logovava{
+    height: 30px;
+}
+
+.sobre{
+    height: 580px;
+    background-image: url(../assets_/Fundowol.png);
+    position: relative;
+}
+
+.retangulo{
+    background-color: black;
+    width: 100%;
+    height: 580px;
+    clip-path: polygon(100% 0, 100% 86%, 0 100%, 0 14%);
+}
+
+.container_sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+}
+
+.textos_sobre{
+    width:500px;
+    margin-top: 50px;
+}
+
+.textos_sobre h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.textos_sobre p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+
+.horarios{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+
+}
+
+.container_horarios{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_horarios h2{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 60px;
+}
+
+.partida{
+    margin: 0 0 0 12px;
+}
+
+.partida img{
+    width: 50px;
+    height: 50px;
+}
+
+.partida span{
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+ hr{
+     height: 80%;
+     margin: 0 8px;
+ }
+
+ .info{
+     height: 660px;
+     background: linear-gradient(180deg, rgba(30, 28, 33, 0.74) 58.25%, rgba(30, 29, 33, 0.86) 68.04%, rgba(30, 29, 33, 0.9) 79.56%, rgba(30, 28, 33, 0.86) 90.65%, rgba(30, 28, 33, 0.74) 100%);
+ }
+
+ .container_noticias{
+     width: 824px;
+     /* background-color: cadetblue; */
+ }
+
+ .container_noticias h2{
+     color: white;
+     font-size: 26px;
+     font-weight: bold;
+     font-family: 'Titillium Web', sans-serif;
+     margin-bottom: 28px;
+     padding-top: 26px;
+ }
+
+ .container_info{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .ajuste_card{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+
+ .card{
+     width: 160px;
+     height: 260px;
+     background: linear-gradient(180deg, rgba(208, 207, 207, 0) 4.81%, rgba(0, 0, 0, 0.84) 93.97%);
+     margin: 6px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .card img{
+     width: 100%;
+     height: auto;
+ }
+
+ .card a{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: bold;
+     font-size: 18px;
+     text-align: justify center;
+     text-decoration: none;
+     color: white;
+ }
+
+ .card p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: justify center;
+    color: white;  
+    width: 80%;
+    margin: 12px 20px;
+ }
+
+ .container_proximos{
+     /* background-color: violet; */
+     width: 370px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ .container_proximos h2{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 28px;
+ }
+
+ .fundo_proximos{
+    background: linear-gradient(180deg, #000000 0%, rgba(184, 155, 155, 0.26) 46.6%, #000000 101.67%);
+    width: 80%;
+    height: 555px;
+ }
+
+ .proximos{
+     margin: 26px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .proximos span{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 18px;
+     color: white;
+ }
+
+ footer{
+     height: 160px;
+     width: 100%;
+     background-color: black;
+ }
+
+ .container_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+ }
+
+ .links{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+
+ .links h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 22px;
+ }
+
+ .links a{
+     text-decoration: none;
+     color: white;
+ }
+
+ .paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ .paginas h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 6px;
+ }
+
+ .paginas a{
+     text-decoration: none;
+     color: white;
+ }
+
+ .logo{
+     margin-left: 20px;
+ }
+
+ .contato{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     width: 400px;
+     height: 100%;
+ }
+
+ .contato p{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+ }
+
+.contato input{
+    width: 192px;
+}
+
+ .seguir{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 372px;
+ }
+
+ .seguir span{
+     font-size: 22px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: white;
+     margin-right: 4px;
+ }
+
+ .seguir img{
+     height: 60px;
+     width: 60px;
+ }
+
+ .botao{
+     background-color: teal;
+     border-style: none;
+ }

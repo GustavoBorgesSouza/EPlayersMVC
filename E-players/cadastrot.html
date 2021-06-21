@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de times</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cadastrot.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container container_header">
+            <a href="#container_banner"><img src="assets_/logo.svg" alt="logo"></a>
+            <nav class="menu_header">
+                <a href="#container_banner">Início</a>
+                <a href="#horarios">Horários</a>
+                <a href="#">Campeonato</a>
+                <a href="#">Resultados</a>
+                <a href="#container_noticias">Notícias</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container_banner">
+            <h1>Cadastro de times</h1>
+        </section>
+
+        <section class="content content_container">
+            <div class="cadastro_container">
+                <div class="preencher">
+                <span>Nome da Equipe</span>
+                <input class="escolher_nome" type="text" name="nome da equipe" id="nome">
+                </div>
+                <div class="preencher">
+                <span>Emblema</span>
+                <input class="escolher_img" type="image" src="escolher imagem" alt="Escolher imagem">
+                </div>
+                <button type="button">Cadastrar</button>
+            </div>
+
+            <h2>Lista de times</h2>
+
+            <table>
+                <tr class="cabecalho">
+                    <th>Nome do jogador</th>
+                    <th>Equipe</th>
+                </tr>
+                <tr class="equipe">
+                    <td>Thiago</td>
+                    <td><img src="assets_/fla-logo.png" alt=""></td>
+                </tr>
+                <tr class="equipe">
+                    <td>Odirlei</td>
+                    <td><img src="assets_/fla-logo.png" alt=""></td>
+                </tr>
+            </table>
+
+            <!-- alternativa tabela usando div -->
+
+            <!-- <div class="container_lista">
+                <div class="nome_emblema">
+                    <div class="nome container_nome">
+                    <h3>Nome da equipe</h3>
+                    </div>
+                    <div class="emblema container_emblema">
+                    <h3>Emblema</h3>
+                    </div>
+                </div>
+
+                <div class="equipe">
+                    <div class="nome container_nome">
+                    <h3>SENAI cythechs</h3>
+                    </div>
+                    <div class="emblema container_emblema">
+                    <img src="assets_/fla-logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="equipe">
+                    <div class="nome container_nome">
+                    <h3>Flamengo</h3>
+                    </div>
+                    <div class="emblema container_emblema">
+                    <img src="assets_/fla-logo.png" alt="">
+                    </div>
+                </div> -->
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container container_footer">
+            <nav class="links">
+                <h3>Links úteis</h3>
+                <a href="#">-Regras de utilização</a>
+                <a href="#">-Suporte</a>
+                <a href="#">-Central de ajuda</a>
+                <a href="#">-Contato</a>
+            </nav>
+
+            <nav class="paginas">
+                <h3>Páginas</h3>
+                <a href="#container_header">-Início</a>
+                <a href="#">-Campeonatos</a>
+                <a href="#">-Resultados</a>
+                <a href="#container_noticias">-Notícias</a>
+                <a href="#">-Login/cadastro</a>
+            </nav>
+
+            <a class="logo" href="#container_header"><img src="assets_/logo.svg" alt="logo E-players"></a>
+
+            <div class="contato">
+                <p>Faça parte do nosso clan, assine nossa nesletter!</p>
+                <form action="post">
+                    <input type="email" id="email" name="email">
+                    <input type="submit" class="botao">
+                </form>
+                <div class="seguir">
+                    <span>Siga-nos em:</span>
+                    <a href="https://www.instagram.com/senai_info/"><img src="assets_/instagram.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/senaiinformatica"><img src="assets_/facebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img src="assets_/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

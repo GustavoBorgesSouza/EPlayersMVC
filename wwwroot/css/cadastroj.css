@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.table-responsive{
+    display: table;
+    width: 1200px;
+}
+
+.container{
+    /* background-color: blue; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn_menu i{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+.container_banner{
+    margin-top: 42px;
+    background-image: url("/assets_/bannercadastrojogador.png");
+    background-position: center;
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_banner h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.content{
+    background-color: #1E1C21;
+    width: 100%;
+    height: 1110px;
+}
+
+.content_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cadastro_container{
+    /* height: 590px; */
+    width: 770px;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.preencher{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+label{
+    font-size: medium;
+    color: azure;
+}
+
+.preencher_equipe{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.cadastro_container span{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+.cadastro_container input{
+    width: 575px;
+    color: black;
+    background-color: white;
+    border: whitesmoke;
+    border-style: solid;
+    margin: 12px 0;
+}
+
+
+button{
+    background-color:#C31616;
+    border-radius: 10px;
+    border-style: none;
+    width: 256px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+table{
+    width: 770px;
+    height: 172px;
+    border-style: solid;
+    border-color: white;
+    border-spacing: 0;
+}
+
+.cabecalho{
+    background-color: black;
+}
+
+th{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    border-bottom: 2px solid white;
+    text-align: left;
+    padding-left: 40px;
+}
+
+
+td{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding-left: 40px;  
+}
+
+
+.container_lista{
+    width: 770px;
+    height: 172px;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nome_emblema{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.nome_emblema h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.container_nome{
+    width: 450px;
+    /* background-color: aquamarine; */
+}
+
+.container_emblema{
+    width: 320px;
+    /* background-color: chartreuse; */
+}
+
+.equipe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.equipe h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.equipe img{
+    height: 38px;
+    width: 38px;
+    margin-left: 50px;
+}
+
+@media(max-width:1200px) {
+    .container{
+        width: 80vw;
+    }
+    .cadastro_container{
+        width: 60vw;
+    }
+
+    table{
+        width: 60vw;
+    }
+
+    .preencher{
+        width: 80%;
+    }
+
+    .cadastro_container input{
+        width: 100%;
+    }
+
+    .preencher_equipe{
+        width: 80%;
+    }
+}
+
+
+@media(max-width:768px){
+    .cadastro_container{
+        width: 80vw;
+    }
+
+    table{
+        width: 80vw;
+    }
+
+    .btn_menu i{
+        display:inline-block;
+        font-size: 30px;
+        color: white;
+    }
+    .menu_header{
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 420px){
+    .container{
+        width: 80vw;
+    }
+
+    .container_header img{
+        width: 200px;
+    }
+
+    .menu_header{
+        display: none;
+        width: 100%;
+        height: 200px;
+
+        justify-content: space-evenly;
+        align-items: unset;
+        flex-direction: column;
+
+        padding-left: 10vw;
+        position: absolute;
+        left: 0;
+        top: 90px;
+
+        background-color: dimgrey;
+
+        margin-left: 0;
+    }
+
+    .btn_menu i{
+        display:inline-block;
+        font-size: 25px;
+    }
+
+ .container_banner h1{
+     font-size: 26px;
+ }
+
+ .content{
+     height: 1000px;
+ }
+
+ .cadastro_container{
+     width: 80vw;
+     height: 480px;
+ }
+
+ .cadastro_container input {
+     width: 80%;
+ }
+
+ .preencher{
+     width: 100%;
+     margin: 10px 0 10px 20%;
+ }
+
+ .preencher_equipe{
+     width: 100%;
+     margin-left: 20%;
+     margin-top: 30px;
+     margin-bottom: 20px;
+ }
+
+ button{
+     width: 160px;
+ }
+
+ table{
+     width: 80vw;
+     height: 196px;
+ }
+
+ td{
+     font-size: 18px;
+ }
+
+}
