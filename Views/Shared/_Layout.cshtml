@@ -1,13 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EplayersMVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/estilo_home.css" />
-    
+
 </head>
+
 <body>
 
     <header>
@@ -19,6 +21,18 @@
                 <a href="#">Campeonato</a>
                 <a href="#">Resultados</a>
                 <a href="#container_noticias">Notícias</a>
+
+                @if (ViewBag.UserName != null)
+                {
+                    <div class="NomeLogout">
+                    <a style="color: turquoise;">Olá, @ViewBag.UserName</a>
+                    <a asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                    </div>
+                }
+                else
+                {
+                    <a asp-area="" asp-controller="Login" asp-action="Logar">Login</a>
+                }
             </nav>
         </div>
     </header>
@@ -48,7 +62,8 @@
                 <a href="#">-Login/cadastro</a>
             </nav>
 
-            <a class="logo" asp-area="" asp-controller="Home" asp-action="Index" ><img src="~/assets_/logo.svg" alt="logo E-players"></a>
+            <a class="logo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets_/logo.svg"
+                    alt="logo E-players"></a>
 
             <div class="contato">
                 <p>Faça parte do nosso clan, assine nossa nesletter!</p>
@@ -61,7 +76,8 @@
                     <a href="https://www.instagram.com/senai_info/"><img src="~/assets_/instagram.png" alt="">
                     </a>
                     <a href="https://www.facebook.com/senaiinformatica"><img src="~/assets_/facebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img src="~/assets_/youtube.png" alt=""></a>
+                    <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img
+                            src="~/assets_/youtube.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -71,4 +87,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

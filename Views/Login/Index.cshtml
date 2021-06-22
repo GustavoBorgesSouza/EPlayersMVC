@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/cadastroj.css">
+
+<div class="titulo pagina">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<section class="container_banner">
+    <h1>@ViewData["Title"]</h1>
+</section>
+
+<section class="content content_container">
+
+    <div class="erro">@TempData.Peek("Mensagem")</div>
+    
+    <form method="POST" action='@Url.Action("Logar")'>
+        <div class="cadastro_container">
+            <div class="preencher">
+                <label>Email</label>
+                <input type="text" name="Email" required />
+            </div>
+
+            <div class="preencher">
+                <label>Senha</label>
+                <input type="password" name="Senha" required />
+            </div>
+
+
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
+</section>
