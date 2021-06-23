@@ -109,10 +109,11 @@ header{
     text-decoration: none;
     background-color: #9A2DAC ;
     text-align: center;
-    width: 290px;
+    width: 248px;
     height: 52px;
     border-radius: 14px;
     margin-top: 62px;
+    line-height: 26px;
 }
 
 .parcerias{
